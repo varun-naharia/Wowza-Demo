@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB6DB58F1F56C4C0007180A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB58E1F56C4C0007180A3 /* AppDelegate.swift */; };
+		AB6DB5931F56C4C1007180A3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB5921F56C4C1007180A3 /* Reachability.swift */; };
+		AB6DB5981F56C4C1007180A3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB5971F56C4C1007180A3 /* SwiftyJSON.swift */; };
+		AB6DB59B1F56C4C1007180A3 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB59A1F56C4C1007180A3 /* BaseController.swift */; };
+		AB6DB59F1F56C4C1007180A3 /* NoInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB59E1F56C4C1007180A3 /* NoInternetView.swift */; };
+		AB6DB5A11F56C4C1007180A3 /* NoInternetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB6DB5A01F56C4C1007180A3 /* NoInternetView.xib */; };
+		AB6DB5A41F56C4C1007180A3 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB5A31F56C4C1007180A3 /* AppConstant.swift */; };
+		AB6DB5A61F56C4C1007180A3 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB5A51F56C4C1007180A3 /* PushNotificationManager.swift */; };
+		AB6DB5A91F56C4C2007180A3 /* Extention+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB5A81F56C4C2007180A3 /* Extention+Extra.swift */; };
+		AB6DB5AB1F56C4C2007180A3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB5AA1F56C4C2007180A3 /* Session.swift */; };
+		AB6DB5B41F56C4C2007180A3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB5B31F56C4C2007180A3 /* LoginController.swift */; };
+		AB6DB5B81F56C4C2007180A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6DB5B61F56C4C2007180A3 /* Main.storyboard */; };
+		AB6DB5BA1F56C4C2007180A3 /* WowzaDemo.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = AB6DB5B91F56C4C2007180A3 /* WowzaDemo.xcdatamodeld */; };
+		AB6DB5BC1F56C4C2007180A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6DB5BB1F56C4C2007180A3 /* Assets.xcassets */; };
+		AB6DB5BF1F56C4C2007180A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6DB5BD1F56C4C2007180A3 /* LaunchScreen.storyboard */; };
+		AB6DB5CA1F56C4C3007180A3 /* WowzaDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB5C91F56C4C3007180A3 /* WowzaDemoUITests.swift */; };
+		AB6DB5D51F56C4C3007180A3 /* WowzaDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6DB5D41F56C4C3007180A3 /* WowzaDemoTests.swift */; };
+		AB6DB5E61F56C657007180A3 /* WowzaGoCoderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6DB5E41F56C63B007180A3 /* WowzaGoCoderSDK.framework */; };
+		AB6DB5E71F56C657007180A3 /* WowzaGoCoderSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB6DB5E41F56C63B007180A3 /* WowzaGoCoderSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB6DB5C61F56C4C3007180A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB6DB5821F56C4BF007180A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB6DB5891F56C4C0007180A3;
+			remoteInfo = WowzaDemo;
+		};
+		AB6DB5D11F56C4C3007180A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB6DB5821F56C4BF007180A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB6DB5891F56C4C0007180A3;
+			remoteInfo = WowzaDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB6DB5E81F56C657007180A3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AB6DB5E71F56C657007180A3 /* WowzaGoCoderSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB6DB58A1F56C4C0007180A3 /* WowzaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowzaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6DB58E1F56C4C0007180A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppDelegate/AppDelegate.swift; sourceTree = "<group>"; };
+		AB6DB5921F56C4C1007180A3 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Vendors/Reachability/Reachability.swift; sourceTree = "<group>"; };
+		AB6DB5951F56C4C1007180A3 /* WowzaDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WowzaDemo-Bridging-Header.h"; path = "AppBase/WowzaDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB6DB5971F56C4C1007180A3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Vendors/SwiftyJson/SwiftyJSON.swift; sourceTree = "<group>"; };
+		AB6DB59A1F56C4C1007180A3 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseController.swift; path = AppBase/Controller/BaseController.swift; sourceTree = "<group>"; };
+		AB6DB59E1F56C4C1007180A3 /* NoInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoInternetView.swift; path = AppBase/View/NoInternetView/NoInternetView.swift; sourceTree = "<group>"; };
+		AB6DB5A01F56C4C1007180A3 /* NoInternetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NoInternetView.xib; path = AppBase/View/NoInternetView/NoInternetView.xib; sourceTree = "<group>"; };
+		AB6DB5A31F56C4C1007180A3 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppConstant.swift; path = AppConstants/AppConstant.swift; sourceTree = "<group>"; };
+		AB6DB5A51F56C4C1007180A3 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PushNotificationManager.swift; path = Vendors/PushNotificationManager.swift; sourceTree = "<group>"; };
+		AB6DB5A81F56C4C2007180A3 /* Extention+Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extention+Extra.swift"; path = "Extensions/Extention+Extra.swift"; sourceTree = "<group>"; };
+		AB6DB5AA1F56C4C2007180A3 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Extensions/Session.swift; sourceTree = "<group>"; };
+		AB6DB5B31F56C4C2007180A3 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginController.swift; path = MVC/Controller/LoginController.swift; sourceTree = "<group>"; };
+		AB6DB5B71F56C4C2007180A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB6DB5B91F56C4C2007180A3 /* WowzaDemo.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = text; path = WowzaDemo.xcdatamodeld; sourceTree = "<group>"; };
+		AB6DB5BB1F56C4C2007180A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB6DB5BE1F56C4C2007180A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB6DB5C01F56C4C2007180A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6DB5C51F56C4C3007180A3 /* WowzaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WowzaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6DB5C91F56C4C3007180A3 /* WowzaDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WowzaDemoUITests.swift; sourceTree = "<group>"; };
+		AB6DB5CB1F56C4C3007180A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6DB5D01F56C4C3007180A3 /* WowzaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WowzaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6DB5D41F56C4C3007180A3 /* WowzaDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WowzaDemoTests.swift; sourceTree = "<group>"; };
+		AB6DB5D61F56C4C3007180A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6DB5E41F56C63B007180A3 /* WowzaGoCoderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WowzaGoCoderSDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB6DB5871F56C4C0007180A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6DB5E61F56C657007180A3 /* WowzaGoCoderSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6DB5C21F56C4C3007180A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6DB5CD1F56C4C3007180A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB6DB5811F56C4BF007180A3 = {
+			isa = PBXGroup;
+			children = (
+				AB6DB58C1F56C4C0007180A3 /* WowzaDemo */,
+				AB6DB5C81F56C4C3007180A3 /* WowzaDemoUITests */,
+				AB6DB5D31F56C4C3007180A3 /* WowzaDemoTests */,
+				AB6DB58B1F56C4C0007180A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB6DB58B1F56C4C0007180A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB58A1F56C4C0007180A3 /* WowzaDemo.app */,
+				AB6DB5C51F56C4C3007180A3 /* WowzaDemoUITests.xctest */,
+				AB6DB5D01F56C4C3007180A3 /* WowzaDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB6DB58C1F56C4C0007180A3 /* WowzaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5B91F56C4C2007180A3 /* WowzaDemo.xcdatamodeld */,
+				AB6DB5BB1F56C4C2007180A3 /* Assets.xcassets */,
+				AB6DB5C01F56C4C2007180A3 /* Info.plist */,
+				AB6DB58D1F56C4C0007180A3 /* AppDelegate */,
+				AB6DB5901F56C4C1007180A3 /* Vendors */,
+				AB6DB5941F56C4C1007180A3 /* AppBase */,
+				AB6DB5A21F56C4C1007180A3 /* AppConstant */,
+				AB6DB5A71F56C4C2007180A3 /* Extensions */,
+				AB6DB5B11F56C4C2007180A3 /* MVC */,
+				AB6DB5B51F56C4C2007180A3 /* Resources */,
+			);
+			path = WowzaDemo;
+			sourceTree = "<group>";
+		};
+		AB6DB58D1F56C4C0007180A3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB58E1F56C4C0007180A3 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AB6DB5901F56C4C1007180A3 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5E41F56C63B007180A3 /* WowzaGoCoderSDK.framework */,
+				AB6DB5A51F56C4C1007180A3 /* PushNotificationManager.swift */,
+				AB6DB5911F56C4C1007180A3 /* Reachability */,
+				AB6DB5961F56C4C1007180A3 /* SwiftyJSON */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		AB6DB5911F56C4C1007180A3 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5921F56C4C1007180A3 /* Reachability.swift */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		AB6DB5941F56C4C1007180A3 /* AppBase */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5951F56C4C1007180A3 /* WowzaDemo-Bridging-Header.h */,
+				AB6DB5991F56C4C1007180A3 /* Controller */,
+				AB6DB59C1F56C4C1007180A3 /* View */,
+			);
+			name = AppBase;
+			sourceTree = "<group>";
+		};
+		AB6DB5961F56C4C1007180A3 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5971F56C4C1007180A3 /* SwiftyJSON.swift */,
+			);
+			name = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		AB6DB5991F56C4C1007180A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB59A1F56C4C1007180A3 /* BaseController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AB6DB59C1F56C4C1007180A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB59D1F56C4C1007180A3 /* NoInternetView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AB6DB59D1F56C4C1007180A3 /* NoInternetView */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB59E1F56C4C1007180A3 /* NoInternetView.swift */,
+				AB6DB5A01F56C4C1007180A3 /* NoInternetView.xib */,
+			);
+			name = NoInternetView;
+			sourceTree = "<group>";
+		};
+		AB6DB5A21F56C4C1007180A3 /* AppConstant */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5A31F56C4C1007180A3 /* AppConstant.swift */,
+			);
+			name = AppConstant;
+			sourceTree = "<group>";
+		};
+		AB6DB5A71F56C4C2007180A3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5A81F56C4C2007180A3 /* Extention+Extra.swift */,
+				AB6DB5AA1F56C4C2007180A3 /* Session.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		AB6DB5B11F56C4C2007180A3 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5B21F56C4C2007180A3 /* Controller */,
+			);
+			name = MVC;
+			sourceTree = "<group>";
+		};
+		AB6DB5B21F56C4C2007180A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5B31F56C4C2007180A3 /* LoginController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AB6DB5B51F56C4C2007180A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5B61F56C4C2007180A3 /* Main.storyboard */,
+				AB6DB5BD1F56C4C2007180A3 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AB6DB5C81F56C4C3007180A3 /* WowzaDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5C91F56C4C3007180A3 /* WowzaDemoUITests.swift */,
+				AB6DB5CB1F56C4C3007180A3 /* Info.plist */,
+			);
+			path = WowzaDemoUITests;
+			sourceTree = "<group>";
+		};
+		AB6DB5D31F56C4C3007180A3 /* WowzaDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB6DB5D41F56C4C3007180A3 /* WowzaDemoTests.swift */,
+				AB6DB5D61F56C4C3007180A3 /* Info.plist */,
+			);
+			path = WowzaDemoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB6DB5891F56C4C0007180A3 /* WowzaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB6DB5D91F56C4C3007180A3 /* Build configuration list for PBXNativeTarget "WowzaDemo" */;
+			buildPhases = (
+				AB6DB5861F56C4C0007180A3 /* Sources */,
+				AB6DB5871F56C4C0007180A3 /* Frameworks */,
+				AB6DB5881F56C4C0007180A3 /* Resources */,
+				AB6DB5E81F56C657007180A3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WowzaDemo;
+			productName = WowzaDemo;
+			productReference = AB6DB58A1F56C4C0007180A3 /* WowzaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB6DB5C41F56C4C3007180A3 /* WowzaDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB6DB5DC1F56C4C3007180A3 /* Build configuration list for PBXNativeTarget "WowzaDemoUITests" */;
+			buildPhases = (
+				AB6DB5C11F56C4C3007180A3 /* Sources */,
+				AB6DB5C21F56C4C3007180A3 /* Frameworks */,
+				AB6DB5C31F56C4C3007180A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB6DB5C71F56C4C3007180A3 /* PBXTargetDependency */,
+			);
+			name = WowzaDemoUITests;
+			productName = WowzaDemoUITests;
+			productReference = AB6DB5C51F56C4C3007180A3 /* WowzaDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AB6DB5CF1F56C4C3007180A3 /* WowzaDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB6DB5DF1F56C4C3007180A3 /* Build configuration list for PBXNativeTarget "WowzaDemoTests" */;
+			buildPhases = (
+				AB6DB5CC1F56C4C3007180A3 /* Sources */,
+				AB6DB5CD1F56C4C3007180A3 /* Frameworks */,
+				AB6DB5CE1F56C4C3007180A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB6DB5D21F56C4C3007180A3 /* PBXTargetDependency */,
+			);
+			name = WowzaDemoTests;
+			productName = WowzaDemoTests;
+			productReference = AB6DB5D01F56C4C3007180A3 /* WowzaDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB6DB5821F56C4BF007180A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Varun Naharia";
+				TargetAttributes = {
+					AB6DB5891F56C4C0007180A3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2658J76W2S;
+						ProvisioningStyle = Automatic;
+					};
+					AB6DB5C41F56C4C3007180A3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2658J76W2S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB6DB5891F56C4C0007180A3;
+					};
+					AB6DB5CF1F56C4C3007180A3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2658J76W2S;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB6DB5891F56C4C0007180A3;
+					};
+				};
+			};
+			buildConfigurationList = AB6DB5851F56C4BF007180A3 /* Build configuration list for PBXProject "WowzaDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB6DB5811F56C4BF007180A3;
+			productRefGroup = AB6DB58B1F56C4C0007180A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB6DB5891F56C4C0007180A3 /* WowzaDemo */,
+				AB6DB5C41F56C4C3007180A3 /* WowzaDemoUITests */,
+				AB6DB5CF1F56C4C3007180A3 /* WowzaDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB6DB5881F56C4C0007180A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6DB5BA1F56C4C2007180A3 /* WowzaDemo.xcdatamodeld in Resources */,
+				AB6DB5A11F56C4C1007180A3 /* NoInternetView.xib in Resources */,
+				AB6DB5BC1F56C4C2007180A3 /* Assets.xcassets in Resources */,
+				AB6DB5BF1F56C4C2007180A3 /* LaunchScreen.storyboard in Resources */,
+				AB6DB5B81F56C4C2007180A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6DB5C31F56C4C3007180A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6DB5CE1F56C4C3007180A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB6DB5861F56C4C0007180A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6DB5B41F56C4C2007180A3 /* LoginController.swift in Sources */,
+				AB6DB5A61F56C4C1007180A3 /* PushNotificationManager.swift in Sources */,
+				AB6DB5981F56C4C1007180A3 /* SwiftyJSON.swift in Sources */,
+				AB6DB5931F56C4C1007180A3 /* Reachability.swift in Sources */,
+				AB6DB59B1F56C4C1007180A3 /* BaseController.swift in Sources */,
+				AB6DB5A41F56C4C1007180A3 /* AppConstant.swift in Sources */,
+				AB6DB5A91F56C4C2007180A3 /* Extention+Extra.swift in Sources */,
+				AB6DB58F1F56C4C0007180A3 /* AppDelegate.swift in Sources */,
+				AB6DB59F1F56C4C1007180A3 /* NoInternetView.swift in Sources */,
+				AB6DB5AB1F56C4C2007180A3 /* Session.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6DB5C11F56C4C3007180A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6DB5CA1F56C4C3007180A3 /* WowzaDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6DB5CC1F56C4C3007180A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6DB5D51F56C4C3007180A3 /* WowzaDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB6DB5C71F56C4C3007180A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB6DB5891F56C4C0007180A3 /* WowzaDemo */;
+			targetProxy = AB6DB5C61F56C4C3007180A3 /* PBXContainerItemProxy */;
+		};
+		AB6DB5D21F56C4C3007180A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB6DB5891F56C4C0007180A3 /* WowzaDemo */;
+			targetProxy = AB6DB5D11F56C4C3007180A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB6DB5B61F56C4C2007180A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB6DB5B71F56C4C2007180A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB6DB5BD1F56C4C2007180A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB6DB5BE1F56C4C2007180A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB6DB5D71F56C4C3007180A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB6DB5D81F56C4C3007180A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB6DB5DA1F56C4C3007180A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2658J76W2S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WowzaDemo",
+				);
+				INFOPLIST_FILE = WowzaDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = logictrix.demowowza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AB6DB5DB1F56C4C3007180A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2658J76W2S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WowzaDemo",
+				);
+				INFOPLIST_FILE = WowzaDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = logictrix.demowowza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AB6DB5DD1F56C4C3007180A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2658J76W2S;
+				INFOPLIST_FILE = WowzaDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WowzaDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WowzaDemo;
+			};
+			name = Debug;
+		};
+		AB6DB5DE1F56C4C3007180A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2658J76W2S;
+				INFOPLIST_FILE = WowzaDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WowzaDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WowzaDemo;
+			};
+			name = Release;
+		};
+		AB6DB5E01F56C4C3007180A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2658J76W2S;
+				INFOPLIST_FILE = WowzaDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WowzaDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WowzaDemo.app/WowzaDemo";
+			};
+			name = Debug;
+		};
+		AB6DB5E11F56C4C3007180A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2658J76W2S;
+				INFOPLIST_FILE = WowzaDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WowzaDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WowzaDemo.app/WowzaDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB6DB5851F56C4BF007180A3 /* Build configuration list for PBXProject "WowzaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6DB5D71F56C4C3007180A3 /* Debug */,
+				AB6DB5D81F56C4C3007180A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB6DB5D91F56C4C3007180A3 /* Build configuration list for PBXNativeTarget "WowzaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6DB5DA1F56C4C3007180A3 /* Debug */,
+				AB6DB5DB1F56C4C3007180A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB6DB5DC1F56C4C3007180A3 /* Build configuration list for PBXNativeTarget "WowzaDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6DB5DD1F56C4C3007180A3 /* Debug */,
+				AB6DB5DE1F56C4C3007180A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB6DB5DF1F56C4C3007180A3 /* Build configuration list for PBXNativeTarget "WowzaDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6DB5E01F56C4C3007180A3 /* Debug */,
+				AB6DB5E11F56C4C3007180A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB6DB5821F56C4BF007180A3 /* Project object */;
+}
